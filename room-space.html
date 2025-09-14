@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas Website Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <style>
+        .thumbnail-1 {
+            background-image: url('image/food-street.jpg');
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+            inset: 0px;
+            /* border width */
+            clip-path: polygon(20% 0, 100% 0, 100% 30%, 100% 70%, 93% 100%, 50% 100%, 0 100%, 0% 30%);
+        }
+
+        .thumbnail-1-wrapper {
+            position: relative;
+            height: 300px;
+            clip-path: polygon(20% 0, 100% 0, 100% 30%, 100% 70%, 85% 100%, 30% 100%, 0 100%, 0% 30%);
+        }
+
+        #panorama {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png" class="tw-w-52 tw-h-20" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="venue-map.html">VENUE MAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="room-space.html">ROOM SPACE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN LOBBY -->
+    <section id="about" class="section-padding">
+        <div class="container -tw-mt-24 lg:-tw-mt-10 tw-tracking-wide">
+            <h1 class="tw-text-[#352a8b]">MAIN LOBBY</h1>
+            <div class="row">
+                <div class="col-lg-6 tw-mt-10">
+                    <img src="assets/images/mainlobby.jpg" class="tw-rounded-xl" alt="">
+                </div>
+                <div class="col-lg-6 tw-mt-0 lg:tw-mt-10">
+                    <div
+                        class="tw-bg-transparent lg:tw-bg-blue-50 tw-px-0 lg:tw-px-6 tw-py-3 tw-text-blue-500 tw-font-medium tw-rounded-xl">
+                        <p class="tw-tracking-wide tw-leading-relaxed tw-mt-2">With wooden Furnishing, marble walls
+                            and a glossy granite floor, the Main Lobby offers a stylish 5.500 sqm of versatile space for
+                            exhibition, pre-conference registration, coffee breaks and lunch or dinner buffets</p>
+                    </div>
+                    <div class="tw-ml-0 tw-mt-0 lg:tw-ml-5 lg:tw-mt-6 tw-space-y-0">
+                        <p class="tw-text-yellow-600 tw-font-semibold">DIMENSION:</p>
+                        <p class="tw-text-green-700 tw-font-semibold">METRES (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">5,500 sqm</p>
+                        <p class="tw-text-green-700 tw-font-semibold">FEET (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">59,201 sq ft</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="tw-text-[#352a8b] tw-mt-16 lg:tw-mt-32 tw-text-4xl tw-text-center">SET-UP</h1>
+            <center>
+                <div class="row tw-mt-14 lg:tw-mt-24 tw-px-0 lg:tw-px-20">
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-32 tw-h-32 lg:tw-w-48 lg:tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-24 tw-h-24 lg:tw-w-32 lg:tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/banquet.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-xl lg:tw-text-2xl">BANQUET</p>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-32 tw-h-32 lg:tw-w-48 lg:tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-24 tw-h-24 lg:tw-w-32 lg:tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/classroom.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-xl lg:tw-text-2xl">CLASS ROOM</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-32 tw-h-32 lg:tw-w-48 lg:tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-24 tw-h-24 lg:tw-w-32 lg:tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/theatre.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-xl lg:tw-text-2xl">THEATRE</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-32 tw-h-32 lg:tw-w-48 lg:tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-24 tw-h-24 lg:tw-w-32 lg:tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/reception.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-xl lg:tw-text-2xl">RECEPTION</p>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <!-- SET UP MAIN LOBBY -->
+    <section id="counter">
+        <div class="container tw-tracking-normal -tw-mt-20 lg:tw-mt-5">
+            <p class="mb-3">‎ </p>
+            <div class="tw-flex tw-justify-center tw-space-x-10">
+                <h1 class="tw-text-gray-900 tw-text-5xl">MERAK</h1>
+                <h1 class="tw-text-white tw-text-5xl">MALEO</h1>
+                <h1 class="tw-text-gray-900 tw-text-5xl tw-hidden lg:tw-block">NURI</h1>
+                <h1 class="tw-text-white tw-text-5xl tw-hidden lg:tw-block">KENARI</h1>
+                <h1 class="tw-text-gray-900 tw-text-5xl tw-hidden lg:tw-block">KAKATUA</h1>
+                <h1 class="tw-text-white tw-text-5xl tw-hidden lg:tw-block">MURAI</h1>
+            </div>
+            <p class="mt-3">‎ </p>
+        </div>
+    </section>
+
+    <!-- PLENNARY HALL -->
+    <section id="about" class="section-padding">
+        <div class="container -tw-mt-24 tw-tracking-wide">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="tw-text-[#352a8b]">PLENNARY HALL</h1>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 tw-mt-10">
+                    <img src="assets/images/mainlobby.jpg" class="tw-rounded-xl tw-h-[450px]" alt="">
+                </div>
+                <div class="col-lg-6 tw-mt-0 lg:tw-mt-10">
+                    <div
+                        class="tw-bg-transparent lg:tw-bg-blue-50 tw-px-0 lg:tw-px-6 tw-py-3 tw-text-blue-500 tw-font-medium tw-rounded-xl">
+                        <p class="tw-tracking-wide tw-leading-relaxed tw-mt-2">Balai Sidang JCC's Plenary Hall is a
+                            5,000-seat theater-style venue with a mezzanine, hosting prestigious international events
+                            including UN meetings, Asian-African Summit, APEC conferences, and concerts by global stars
+                            like Mariah Carey, Sting, and Julio Iglesias. Equipped with advanced audiovisual technology
+                            such as LED displays, digital conference microphones, and simultaneous interpretation
+                            systems, the hall serves as a premier destination for major international gatherings and
+                            high-profile performances.
+                        </p>
+                    </div>
+                    <div class="tw-ml-0 lg:tw-ml-5 tw-mt-0 lg:tw-mt-6 tw-space-y-0">
+                        <p class="tw-text-yellow-600 tw-font-semibold">DIMENSION:</p>
+                        <p class="tw-text-green-700 tw-font-semibold">METRES (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">51.60 (diameter) x 11.30</p>
+                        <p class="tw-text-green-700 tw-font-semibold">FEET (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">169 (diameter) x 37</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="tw-text-[#352a8b] tw-mt-32 tw-text-center">SET-UP</h1>
+            <center>
+                <div class="row tw-mt-14 lg:tw-mt-24 tw-px-0 lg:tw-px-20">
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/banquet.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">1,300</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">BANQUET</p>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/classroom.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">1,000</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">CLASS ROOM</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/theatre.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">2,300</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">THEATRE</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/reception.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">2,200</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">RECEPTION</p>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <!-- SET UP PLENNARY HALL -->
+    <section id="counter">
+        <div class="container tw-tracking-normal -tw-mt-20 lg:tw-mt-0">
+            <p class="mb-3">‎ </p>
+            <div class="tw-flex tw-justify-center tw-space-x-10">
+                <h1 class="tw-text-gray-900 tw-text-5xl">MERAK</h1>
+                <h1 class="tw-text-white tw-text-5xl">MALEO</h1>
+                <h1 class="tw-text-gray-900 tw-text-5xl tw-hidden lg:tw-block">NURI</h1>
+                <h1 class="tw-text-white tw-text-5xl tw-hidden lg:tw-block">KENARI</h1>
+                <h1 class="tw-text-gray-900 tw-text-5xl tw-hidden lg:tw-block">KAKATUA</h1>
+                <h1 class="tw-text-white tw-text-5xl tw-hidden lg:tw-block">MURAI</h1>
+            </div>
+            <p class="mt-3">‎ </p>
+        </div>
+    </section>
+
+    <!-- ASSEMBLY HALL -->
+    <section id="about" class="section-padding">
+        <div class="container -tw-mt-28 lg:-tw-mt-10 tw-tracking-wide">
+            <h1 class="tw-text-[#352a8b]">Assembly Hall</h1>
+            <div class="row">
+                <div class="col-lg-6 tw-mt-10">
+                    <img src="assets/images/mainlobby.jpg" class="tw-rounded-xl tw-h-[500px]" alt="">
+                </div>
+                <div class="col-lg-6 tw-mt-0 lg:tw-mt-10">
+                    <div
+                        class="tw-bg-transparent lg:tw-bg-blue-50 tw-px-2 lg:tw-px-6 tw-py-3 tw-text-blue-500 tw-font-medium tw-rounded-xl">
+                        <p class="tw-tracking-wide tw-leading-relaxed tw-mt-2">The 3,920 sqm Assembly Hall is the second
+                            largest banquet room in Indonesia, which comfortably seats 2,500 guests for sit-down dinner
+                            or 3,500 guests for reception. The Hall is suitable for conferences, wedding receptions,
+                            lectures and classes, dinners and luncheons, theatre productions, fashion shows, music and
+                            dance performances, exhibitions, product launches, and award ceremonies.</p>
+                        <p class="tw-tracking-wide tw-leading-relaxed tw-mt-2">The sheet size of Assembly Hall offer you
+                            immense flexibility: movable floor-to-ceiling partitions can divide the Hall into three
+                            separate rooms, tailoring the space to precisely meet your requirements, or enabling you to
+                            hold different functions simultaneously.</p>
+                    </div>
+                    <div class="tw-ml-2 lg:tw-ml-5 tw-mt-6 tw-space-y-0">
+                        <p class="tw-text-yellow-600 tw-font-semibold">DIMENSION:</p>
+                        <p class="tw-text-green-700 tw-font-semibold">METRES (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">89.10 x 44.00 x 8.80</p>
+                        <p class="tw-text-green-700 tw-font-semibold">FEET (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">292 x 144 x 28</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="tw-text-[#352a8b] tw-mt-32 tw-text-center">SET-UP</h1>
+            <center>
+                <div class="row tw-mt-14 lg:tw-mt-24 tw-px-0 lg:tw-px-20">
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/banquet.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">2,500</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">BANQUET</p>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/classroom.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">2,600</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">CLASS ROOM</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/theatre.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">3,900</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">THEATRE</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/reception.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">3,500</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">RECEPTION</p>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <!-- SET UP ASSEMBLY HALL -->
+    <section id="counter">
+        <div class="container tw-tracking-normal -tw-mt-20 lg:tw-mt-0">
+            <p class="mb-3">‎ </p>
+            <div class="tw-flex tw-justify-center tw-space-x-10">
+                <h1 class="tw-text-gray-900 tw-text-5xl">MERAK</h1>
+                <h1 class="tw-text-white tw-text-5xl">MALEO</h1>
+                <h1 class="tw-text-gray-900 tw-text-5xl tw-hidden lg:tw-block">NURI</h1>
+                <h1 class="tw-text-white tw-text-5xl tw-hidden lg:tw-block">KENARI</h1>
+                <h1 class="tw-text-gray-900 tw-text-5xl tw-hidden lg:tw-block">KAKATUA</h1>
+                <h1 class="tw-text-white tw-text-5xl tw-hidden lg:tw-block">MURAI</h1>
+            </div>
+            <p class="mt-3">‎ </p>
+        </div>
+    </section>
+
+    <!-- CENDRAWASIH ROOM -->
+    <section id="about" class="section-padding">
+        <div class="container -tw-mt-28 lg:-tw-mt-10 tw-tracking-wide">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="tw-text-[#352a8b]">CENDRAWASIH ROOM</h1>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 tw-mt-10">
+                    <img src="assets/images/mainlobby.jpg" class="tw-rounded-xl tw-h-[400px]" alt="">
+                </div>
+                <div class="col-lg-6 tw-mt-0 lg:tw-mt-10">
+                    <div
+                        class="tw-bg-transparent lg:tw-bg-blue-50 tw-px-2 lg:tw-px-6 tw-py-3 tw-text-blue-500 tw-font-medium tw-rounded-xl">
+                        <p class="tw-tracking-wide tw-leading-relaxed tw-mt-2">From bustling craft fairs to formal
+                            roundtables, the 2,109sqm Cendrawasih Rooms' flexible space suit all engagement types. The
+                            Rooms is fitted with interpreter booths supporting the simultaneous interpreting system, and
+                            conference microphones with voting systems. Movable floor-to-ceiling partitions can
+                            customize the room space for smaller events.
+                        </p>
+                    </div>
+                    <div class="tw-ml-2 lg:tw-ml-5 tw-mt-0 lg:tw-mt-6 tw-space-y-0">
+                        <p class="tw-text-yellow-600 tw-font-semibold">DIMENSION:</p>
+                        <p class="tw-text-green-700 tw-font-semibold">METRES (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">63.60 x 33.17 x 8.00</p>
+                        <p class="tw-text-green-700 tw-font-semibold">FEET (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">208 x 108 x 26</p>
+                    </div>
+                </div>
+
+            </div>
+            <h1 class="tw-text-[#352a8b] tw-mt-32 tw-text-center">SET-UP</h1>
+            <center>
+                <div class="row tw-mt-14 lg:tw-mt-24 tw-px-0 lg:tw-px-20">
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/banquet.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">1,300</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">BANQUET</p>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/classroom.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">1,400</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">CLASS ROOM</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/theatre.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">2,000</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">THEATRE</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/reception.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-3 tw-text-indigo-700 tw-font-semibold tw-text-2xl">1,800</p>
+                        <p class="-tw-mt-2 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">RECEPTION</p>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <!-- SET UP CENDRAWASIH ROOM -->
+    <section id="counter">
+        <div class="container tw-tracking-normal -tw-mt-20 lg:tw-mt-0">
+            <p class="mb-3">‎ </p>
+            <div class="tw-flex tw-justify-center tw-space-x-10">
+                <h1 class="tw-text-gray-900 tw-text-5xl">MERAK</h1>
+                <h1 class="tw-text-white tw-text-5xl">MALEO</h1>
+                <h1 class="tw-text-gray-900 tw-text-5xl tw-hidden lg:tw-block">NURI</h1>
+                <h1 class="tw-text-white tw-text-5xl tw-hidden lg:tw-block">KENARI</h1>
+                <h1 class="tw-text-gray-900 tw-text-5xl tw-hidden lg:tw-block">KAKATUA</h1>
+                <h1 class="tw-text-white tw-text-5xl tw-hidden lg:tw-block">MURAI</h1>
+            </div>
+            <p class="mt-3">‎ </p>
+        </div>
+    </section>
+
+    <!-- EXHIBITION HALL A -->
+    <section id="about" class="section-padding">
+        <div class="container -tw-mt-28 lg:-tw-mt-10 tw-tracking-wide">
+            <h1 class="tw-text-[#352a8b]">Exhibition Hall A</h1>
+            <div class="row">
+                <div class="col-lg-6 tw-mt-10">
+                    <img src="assets/images/mainlobby.jpg" class="tw-rounded-xl tw-h-[350px]" alt="">
+                </div>
+                <div class="col-lg-6 tw-mt-0 lg:tw-mt-10">
+                    <div
+                        class="tw-bg-transparent lg:tw-bg-blue-50 tw-px-2 lg:tw-px-6 tw-py-3 tw-text-blue-500 tw-font-medium tw-rounded-xl">
+                        <p class="tw-tracking-wide tw-leading-relaxed tw-mt-2">Exhibition Hall A covers 3,060 sqm, has a
+                            floor load of 1,200 kg/sqm, and as distribution frame capable of hadling 450 pairs of
+                            telephone lines. Connected with Exhibition Hall B through a 450-sqm corridor giving a
+                            combined Exhibition space of 9,585 sqm</p>
+                    </div>
+                    <div class="tw-ml-2 lg:tw-ml-5 tw-mt-0 lg:tw-mt-6 tw-space-y-0">
+                        <p class="tw-text-yellow-600 tw-font-semibold">DIMENSION:</p>
+                        <p class="tw-text-green-700 tw-font-semibold">METRES (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">68.00 x 45.00 x 9.00</p>
+                        <p class="tw-text-green-700 tw-font-semibold">FEET (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">223 x 147 x 29</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="tw-text-[#352a8b] tw-mt-32 tw-text-center">SET-UP</h1>
+            <center>
+                <div class="row tw-mt-14 lg:tw-mt-24 tw-px-0 lg:tw-px-20">
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/banquet.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">BANQUET</p>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/classroom.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">CLASS ROOM</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/theatre.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">THEATRE</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/reception.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">RECEPTION</p>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <!-- SET UP EXHIBITION HALL A -->
+    <section id="counter">
+        <div class="container tw-tracking-normal -tw-mt-20 lg:tw-mt-0">
+            <p class="mb-3">‎ </p>
+            <div class="tw-flex tw-justify-center tw-space-x-10">
+                <h1 class="tw-text-gray-900 tw-text-5xl">MERAK</h1>
+                <h1 class="tw-text-white tw-text-5xl">MALEO</h1>
+                <h1 class="tw-text-gray-900 tw-text-5xl tw-hidden lg:tw-block">NURI</h1>
+                <h1 class="tw-text-white tw-text-5xl tw-hidden lg:tw-block">KENARI</h1>
+                <h1 class="tw-text-gray-900 tw-text-5xl tw-hidden lg:tw-block">KAKATUA</h1>
+                <h1 class="tw-text-white tw-text-5xl tw-hidden lg:tw-block">MURAI</h1>
+            </div>
+            <p class="mt-3">‎ </p>
+        </div>
+    </section>
+
+    <!-- EXHIBITION HALL B -->
+    <section id="about" class="section-padding">
+        <div class="container -tw-mt-28 lg:-tw-mt-10 tw-tracking-wide">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="tw-text-[#352a8b]">Exhibition Hall B</h1>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 tw-mt-10">
+                    <img src="assets/images/mainlobby.jpg" class="tw-rounded-xl tw-h-[450px]" alt="">
+                </div>
+                <div class="col-lg-6 tw-mt-0 lg:tw-mt-10">
+                    <div
+                        class="tw-bg-transparent lg:tw-bg-blue-50 tw-px-2 lg:tw-px-6 tw-py-3 tw-text-blue-500 tw-font-medium tw-rounded-xl">
+                        <p class="tw-tracking-wide tw-leading-relaxed tw-mt-2">Exhibition Hall B spans 6,075 sqm, with a
+                            floor load of 1,500 kg/sqm, and a distribution frame able to handle up to 500 pairs of
+                            telephone lines. We have two exhibition halls, each with their own 1,000 sqm lobbies and
+                            access points. Both halls have a ceiling height of nine meters, and are equipped with
+                            telephone and communication outlets, single and 3-phase power sources, and floor box access
+                            to electricity, phone lines, and water, drainage and compressed air on request. Trucks have
+                            direct access to both halls for easy loading.
+                        </p>
+                    </div>
+                    <div class="tw-ml-2 lg:tw-ml-5 tw-mt-0 lg:tw-mt-6 tw-space-y-0">
+                        <p class="tw-text-yellow-600 tw-font-semibold">DIMENSION:</p>
+                        <p class="tw-text-green-700 tw-font-semibold">METRES (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">97.50 x 60.00 x (9.00 ~ 1)</p>
+                        <p class="tw-text-green-700 tw-font-semibold">FEET (L X W X H)</p>
+                        <p class="tw-text-gray-700 tw-font-semibold">319 x 196 x (29~45)</p>
+                    </div>
+                </div>
+
+            </div>
+            <h1 class="tw-text-[#352a8b] tw-mt-32 tw-text-center">SET-UP</h1>
+            <center>
+                <div class="row tw-mt-14 lg:tw-mt-24 tw-px-0 lg:tw-px-20">
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/banquet.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">BANQUET</p>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/classroom.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">CLASS ROOM</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/theatre.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">THEATRE</p>
+                    </div>
+                    <div class="col-lg-3 col-6 tw-mt-10 lg:tw-mt-0">
+                        <div
+                            class="tw-bg-blue-300 tw-rounded-full tw-w-48 tw-h-48 tw-flex tw-items-center tw-justify-center">
+                            <div
+                                class="tw-bg-blue-200 tw-rounded-full tw-w-32 tw-h-32 tw-flex tw-items-center tw-justify-center">
+                                <img src="assets/images/reception.png" alt="">
+                            </div>
+                        </div>
+                        <p class="tw-mt-5 tw-text-[#352a8b] tw-font-semibold tw-text-2xl">RECEPTION</p>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark tw-pb-10 lg:tw-pb-0">
+        <div class="container tw-block lg:tw-flex tw-text-center lg:tw-text-left">
+            <div class="tw-block lg:tw-flex tw-text-white tw-space-x-5 -tw-mt-16">
+                <h1 class="tw-text-3xl lg:tw-text-4xl tw-text-white tw-mr-0 lg:tw-mr-20 tw-mb-10 lg:tw-mb-0">JAKARTA
+                    CONVENTION
+                    CENTER</h1>
+                <i class="ri-instagram-fill tw-text-4xl"></i>
+                <i class="ri-whatsapp-fill tw-text-4xl"></i>
+                <i class="ri-mail-fill tw-text-4xl"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

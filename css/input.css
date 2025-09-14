@@ -1,0 +1,7 @@
+@tailwind components;
+@tailwind utilities;
+
+button {
+    all: unset;
+    display: inline-block;
+}
